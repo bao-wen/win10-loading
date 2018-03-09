@@ -1,0 +1,27 @@
+{
+  "name": "win10-loading",
+  "version": "1.0.0",
+  "description": "windows 10 loading",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bao-wen/win10-loading.git"
+  },
+  "keywords": [
+    "win10",
+    "loading"
+  ],
+  "author": "baowen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bao-wen/win10-loading/issues"
+  },
+  "homepage": "https://github.com/bao-wen/win10-loading#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  }
+}
