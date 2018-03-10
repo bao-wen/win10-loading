@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+
+
+        /*.sk-fading-circle {*/
+            /*margin: 100px auto;*/
+            /*width: 120px;*/
+            /*height: 120px;*/
+            /*position: relative;*/
+            /*border: 1px solid #333;*/
+            /*border-radius: 50%;*/
+
+        /*}*/
+
+        /*.sk-fading-circle .sk-circle {*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*position: absolute;*/
+
+        /*}*/
+
+        /*.sk-circle1 {*/
+            /*transform: rotate(10deg);*/
+        /*}*/
+
+        /*.sk-circle2 {*/
+            /*transform: rotate(20deg);*/
+        /*}*/
+
+        /*.sk-circle3 {*/
+            /*transform: rotate(30deg);*/
+        /*}*/
+
+        /*.sk-circle4 {*/
+            /*transform: rotate(40deg);*/
+        /*}*/
+
+
+    </style>
+</head>
+<body>
+<div class="sk-fading-circle">
+
+    <svg class="sk-circle1 sk-circle" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+        <circle cx="47%" cy="94%" r="3%"
+                fill="black"/>
+    </svg>
+    <svg class="sk-circle2 sk-circle" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+        <circle cx="47%" cy="94%" r="3%"
+                fill="black"/>
+    </svg>
+    <svg class="sk-circle3 sk-circle" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+        <circle cx="47%" cy="94%" r="3%"
+                fill="black"/>
+    </svg>
+    <svg class="sk-circle4 sk-circle" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+        <circle cx="47%" cy="94%" r="3%"
+                fill="black"/>
+    </svg>
+    <svg class="sk-circle5 sk-circle" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+        <circle cx="47%" cy="94%" r="3%"
+                fill="black"/>
+    </svg>
+
+</div>
+
+<script>
+    var jj=".sk-fading-circle{margin:100px auto;width:120px;height:120px;position:relative;border:1px solid #333;border-radius:50%}.sk-fading-circle .sk-circle{width:100%;height:100%;position:absolute}.sk-circle1{transform:rotate(10deg)}.sk-circle2{transform:rotate(20deg)}.sk-circle3{transform:rotate(30deg)}.sk-circle4{transform:rotate(40deg)}";
+//    document.createStyleSheet(style.css)
+    var style = document.createElement('style');
+    style.type ="text/css";
+    style.innerHTML=jj;
+    document.getElementsByTagName('HEAD').item(0).appendChild(style);
+    //    var kk = document.getElementsByTagName('div');
+    //    console.log(kk)
+    //    console.log(kk[0])
+    //    console.log(kk.length)
+
+</script>
+</body>
+</html>
