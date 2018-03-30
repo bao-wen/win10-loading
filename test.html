@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .button-wrap {
+            position: fixed;
+            bottom: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+    </style>
+    <!--<link rel="stylesheet" href="./test.css">-->
+    <script src="./dist/win10_loading.js"></script>
+</head>
+
+<body>
+<div class="button-wrap">
+    <button class='start-button'>start</button>
+    <button class='pause-button'>pause</button>
+    <button class='stop-button'>stop</button>
+</div>
+<script>
+
+//    var wl = win10Loading();
+//    // wl.start();
+//    var start = document.querySelector('.start-button');
+//    var pause = document.querySelector('.pause-button');
+//    var stop = document.querySelector('.stop-button');
+//    start.onclick = function () {
+//
+//        wl.start();
+//    };
+//    pause.onclick = function () {
+//
+//        wl.pause();
+//    };
+//
+//    stop.onclick = function () {
+//
+//        wl.stop();
+//    };
+
+
+
+    function tco(f) {
+        var value;
+        var active = false;
+        var accumulated = [];
+
+        return function accumulator() {
+            accumulated.push(arguments);
+            if (!active) {
+                active = true;
+                while (accumulated.length) {
+                    value = f.apply(this, accumulated.shift());
+                }
+                active = false;
+                return value;
+            }
+        };
+    }
+
+    var sum = tco(function(x, y) {
+        if (y > 0) {
+            return sum(x + 1, y - 1)
+        }
+        else {
+            return x
+        }
+    });
+
+    sum(1, 100000)
+</script>
+</body>
+
+</html>

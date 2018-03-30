@@ -4,7 +4,9 @@
   "description": "windows 10 loading",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup --config -w ",
+    "build": "webpack  --config webpack/webpack.prod.js  "
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/bao-wen/win10-loading#readme",
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^4.1.1"
+    "rollup": "^0.57.1"
+
   }
 }
