@@ -44,7 +44,6 @@ _extend(VerticalList.prototype, {
 		return this;
 	},
 	init: function (callback) {
-		console.log('fff');
 		this.sT = 0;
 		this.ind = 0;
 		callback && callback.call(this);

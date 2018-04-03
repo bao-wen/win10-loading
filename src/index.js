@@ -92,7 +92,6 @@ function win10Loading(options) {
 		//reset过后在next还会++
 		last.ind--;
 	});
-	console.dir(levelList);
 	return new AnimationLauncher(levelList);
 }
 
