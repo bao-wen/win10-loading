@@ -4,7 +4,7 @@ function linear(b, c, d, t) {
 
 function quadEaseIn(b, c, d, t) {
 	return c * (t /= d) * t + b;
-};
+}
 
 function quadEaseOut(b, c, d, t) {
 	return -c * (t /= d) * (t - 2) + b;
@@ -108,6 +108,5 @@ export {
 	linear, quadEaseIn, quadEaseOut, quadEaseInOut, cubicEaseIn, cubicEaseOut,
 	cubicEaseInOut, quartEaseIn, quartEaseOut, quartEaseInOut, quintEaseIn,
 	quintEaseInOut, quintEaseOut, sineEaseIn, sineEaseOut, sineEaseInOut, expoEaseIn
-	
 	, expoEaseOut, expoEaseInOut, circEaseIn, circEaseOut, circEaseInOut
 };

@@ -1,22 +1,20 @@
 import start from './start';
 import pause from './pause';
-import support from './support';
 import stop from './stop';
 import {_extend} from './utils';
 
-
-function AnimationLauncher(levelQueue) {
-	this.levelQueue = levelQueue;
-	this.length = levelQueue.length;
+function AnimationLauncher(levelList) {
+	this.levelList = levelList;
+	this.length = levelList.length;
 	this.mask = 1;
 }
-
 
 _extend(AnimationLauncher.prototype, {
 	start: start,
 	pause: pause,
-	stop: stop,
-	support: support
+	stop: stop
+	
 });
+
 
 export default AnimationLauncher;

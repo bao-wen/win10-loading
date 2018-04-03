@@ -8,7 +8,7 @@ function start() {
 	function loop() {
 		var time = new Date().getTime();
 		for (var i = 0; i < me.length; i++) {
-			me.levelQueue[i].next(time);
+			me.levelList[i].next(time);
 		}
 		me.timer = setTimeout(loop, 15);
 	}

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rollup --config -w ",
-    "build": "webpack  --config webpack/webpack.prod.js  "
+    "start": "rollup --config -w ",
+    "build": " node uglify.config.js "
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
   "homepage": "https://github.com/bao-wen/win10-loading#readme",
   "dependencies": {},
   "devDependencies": {
-    "rollup": "^0.57.1"
-
+    "rollup": "^0.57.1",
+    "rollup-watch": "^4.3.1",
+    "uglify-js": "^3.3.17"
   }
 }

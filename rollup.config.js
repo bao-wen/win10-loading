@@ -6,6 +6,4 @@ export default {
 		
 	},
 	moduleName: 'win10Loading',
-	plugins: [],
-	sourceMap: true
 };
