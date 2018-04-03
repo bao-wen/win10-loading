@@ -1,8 +1,9 @@
 {
   "name": "win10-loading",
   "version": "1.0.0",
-  "description": "windows 10 loading",
-  "main": "index.js",
+  "description": "windows 10 loading animation",
+  "main": "dist/win10_loading.min.js",
+  "module": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rollup --config -w ",
@@ -16,7 +17,7 @@
     "win10",
     "loading"
   ],
-  "author": "baowen",
+  "author": "bao-wen",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bao-wen/win10-loading/issues"
