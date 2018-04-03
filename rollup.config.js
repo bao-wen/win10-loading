@@ -1,7 +1,7 @@
 export default {
 	input: 'src/index.js',
 	output: {
-		file: './dist/win10_loading.js',
+		file: './dist/win10-loading.js',
 		format: 'umd',
 		
 	},

@@ -21,6 +21,37 @@ windows 10 loading animation
 
 #### Installation
 
-##### Using npm:
+Using npm:
 
-`npm i --save win10-loading`
+	npm i --save win10-loading
+&nbsp;
+
+
+	import win10Loading from 'win10-loading';
+Or manually download and link anime.min.js in your HTML:
+
+	<script src="win10-loading.min.js"></script>
+#### Basic Usage
+
+	//init
+	var wL=win10Loading();
+	//start
+	wl.start();
+	//pause
+	wl.pause();
+	//stop
+	wl.stop()
+
+#### Options
+
+	var wl=win10Loading({
+		// rotary diameter,default 100
+	    width: Number,
+	    // small ball diameter,default 3
+		ballWidth: Number,
+		// ball color,default #000,can pass an array of color string. e.g. ['#333','red']
+		color: String|Sting[],
+		// container parent element,default body. center alignment.
+		// default fixed positon ,other elements are absolute position
+		relative: node
+	})
