@@ -49,6 +49,8 @@ function _create(options) {
 		top: '50%',
 		left: '50%',
 		zIndex: '1000',
+		transform:'translate(-50%,-50%)',
+		'-ms-transform':'translate(-50%,-50%)'
 	});
 	var container = _createSingleElement('div', containerProperty);
 	fragment.appendChild(container);

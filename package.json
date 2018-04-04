@@ -1,6 +1,6 @@
 {
   "name": "win10-loading",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "windows 10 loading animation",
   "main": "dist/win10_loading.min.js",
   "module": "src/index.js",
